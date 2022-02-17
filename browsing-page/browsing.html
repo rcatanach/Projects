@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Browsing Page</title>
+	<link href="browsing.css" rel="stylesheet" type="text/css" />
+</head>
+    <body>
+        <!---Categories-->
+        <nav>
+            <ul>
+                <li><a href = "/index.html">Home</a></li>
+                <li class = "cart">
+                    <a href="/checkout-page/checkout.html">
+                        <img src = "assets/cart.png" width = "65px" heigh = "100%">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class = "container">
+        <div class = "categories">
+            <h2 class = "title">Featured Partners</h2>
+            <div class = "row">
+                <div class = "col">
+                    <img src = "/main-page/assets/man1.jpg">
+                    <h4>Dylan O'Brien</h4>
+                    <p>Still lives at home with his parents, but  at least hes off the streets.</p>
+                    <!-- <button onclick= "checkout(item1)">Add to Cart</button> -->
+                    <a class = "add-cart cart1" href = "#">Add to Cart</a>
+                </div>
+                
+                
+                <div class = "col">  
+                    <img src = "/main-page/assets/women1.jpg">
+                    <h4>Amy Wind</h4>
+                    <p>Great at baking, but you have to wash the dishes.</p>
+                    <a class = "add-cart cart2" href = "#">Add to Cart</a>
+                </div> 
+                
+                
+                <div class = "col">
+                    <img src = "/main-page/assets/man2.jpg">
+                    <h4>Steve Johnson</h4>
+                    <p>Can run a mile in 4 minutes, but he never shows up to a date on time.</p>
+                    <a class = "add-cart cart3" href = "#">Add to Cart</a>
+                </div>
+                
+                <div class = "col">
+                    <img src = "/main-page/assets/women2.jpg">
+                    <h4>Stephanie Cheng</h4>
+                    <p>Looks like a kitten. Snores like a lion.</p>
+                    <a class = "add-cart cart4" href = "#">Add to Cart</a>
+                </div>
+                
+                <div class = "col">
+                    <img src = "/main-page/assets/men3.jpg">
+                    <h4>Cristiano Lopez</h4>
+                    <p>Nice abs</p>
+                    <a class = "add-cart cart5" href = "#">Add to Cart</a>
+                </div>
+                
+                <div class = "col">
+                    <img src = "/main-page/assets/women3.jpg">
+                    <h4>Helena Rios</h4>
+                    <p>An aspiring dental student. She also is missing two teeth</p>
+                    <a class = "add-cart cart6" href = "#">Add to Cart</a>
+                </div>
+                
+                <div class = "col">
+                
+                    <img src = "/main-page/assets/man4.jpg">
+
+                    <h4>Kim Tae-hyung</h4>
+                    <p>Loves to sing and dance. Has commitment issues.</p>
+                    <a class = "add-cart cart7" href = "#">Add to Cart</a>
+                </div>
+                
+                <div class = "col">                    
+                
+                    <img src = "/main-page/assets/woman4.jpg">
+
+                    <h4>Stephanie Pierce</h4>
+                    <p>A cat lady, who is purrrrrfect.</p>
+                    <a class = "add-cart cart8" href = "#">Add to Cart</a>
+                </div>
+                
+                <div class = "col">
+                
+                    <img src = "/main-page/assets/men5.jpg">
+                    <h4>Shyla Vihaan</h4>
+                    <p>The king of India, rich looking for a partner. Crazy mom</p>
+                    <a class = "add-cart cart9" href = "#">Add to Cart</a>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        <script src = "addToCart.js"></script>
+        <script src="script.js"></script>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')     
+              menuToggle.addEventListener('click', () => {
+              menuToggle.classList.toggle('active')
+              showcase.classList.toggle('active')
+            })
+          </script>
+    </body>
+</html>
+
